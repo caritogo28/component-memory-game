@@ -1,0 +1,105 @@
+img {
+  vertical-align: middle;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+  
+.gridContainer {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+  
+.gridCell {
+  display: inline-block;
+  width: 23%;
+  min-height: 100px;
+  margin: 1%;
+}
+.gridCell {
+  background-color: #ffc600;
+}
+.gridCell img {
+  opacity: 0;
+}
+
+/*POPUP*/
+.popupOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .75);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.popupContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  box-sizing: border-box;
+  width: 90%;
+  background: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 0 10px #000;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #212529;
+}
+.popupCloseIcon {
+  text-align: right;
+  margin: 0;
+  z-index: 1;
+  background-color: #ffc600;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+.popupContainerButton {
+  display: flex;
+  justify-content: space-around;
+}
+.popupContainerButton p {
+  cursor: pointer;
+  background-color: #ffc600;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 40em) {
+  .gridContainer {
+    width: 90%;
+  }
+    
+  .gridCell {
+    min-height: 70px;
+  }
+
+  .popupContainerButton p {
+    padding: 10px;
+    width: 48%;
+  }
+}

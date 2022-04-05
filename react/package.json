@@ -1,6 +1,6 @@
 {
-  "name": "CHANGE_ME",
-  "version": "0.0.0",
+  "name": "memory-game",
+  "version": "0.0.1",
   "scripts": {
     "test": "vtex-test-tools test"
   },
@@ -9,7 +9,10 @@
     "react": "^16.12.0",
     "react-apollo": "^3.1.3",
     "react-dom": "^16.12.0",
-    "react-intl": "^3.12.0"
+    "react-intl": "^3.12.0",
+    "font-awesome": "^4.7.0",
+    "lodash.shuffle": "^4.2.0",
+    "react-flipcard": "^0.2.1"
   },
   "devDependencies": {
     "@apollo/react-testing": "^3.1.3",
@@ -20,6 +23,8 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "typescript": "^3.9.6"
+    "typescript": "3.9.7",
+    "gh-pages": "^0.12.0",
+    "react-scripts": "0.8.4"
   }
 }
